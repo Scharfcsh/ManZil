@@ -33,12 +33,7 @@ const SearchDestination = () => {
       </div>
 
       {/* Button to submit search */}
-      <button
-        onClick={submitSearch}
-        className="mt-4 px-6 py-2 rounded-full bg-green-500 text-white font-medium hover:bg-green-600 transition duration-300"
-      >
-        Search
-      </button>
+      
     </div>
   );
 };
