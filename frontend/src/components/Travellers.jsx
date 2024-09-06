@@ -17,10 +17,10 @@ const Travellers = ({persons, setPersons}) => {
   return (
     <div className="p-6 max-w-md mx-auto">
       {/* Header and description */}
-      <h2 className="text-xl sm:text-2xl font-semibold mb-4">
+      <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-center">
         What kind of trip are you planning?
       </h2>
-      <p className="text-gray-500 mb-6 text-sm sm:text-base">
+      <p className="text-gray-500 mb-6 text-sm sm:text-base text-center">
         Select the type of trip you are planning.
       </p>
 

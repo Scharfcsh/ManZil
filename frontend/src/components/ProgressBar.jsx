@@ -19,6 +19,15 @@ const ProgressBar = () => {
   const [persons, setPersons] = useState("")
   const [selectedCategories, setSelectedCategories] = useState([]);
 
+function handleNextButton() {
+    console.log( selectedCity);
+    console.log(date);
+    console.log(persons);
+    console.log(selectedCategories);
+
+
+  };
+
 return (
     <div className="w-4/5 items-center mt-4 mx-auto">
     
@@ -58,7 +67,11 @@ return (
                     )}
                     {step===3?(
                         <button
-                        onClick={() => setStep(step + 1)}
+                        onClick={() => {
+                            if (selectedCity && date.startDate && date.endDate && persons && selectedCategories.length > 0) {
+                                handleNextButton();
+                            }
+                        }}
                         disabled={step >= totalSteps}
                         className={`px-4 py-2 rounded ${
                                 step < totalSteps
@@ -72,7 +85,11 @@ return (
 
                     ):
                     <button
-                        onClick={() => setStep(step + 1)}
+                        onClick={() => {
+                            
+                                setStep(step + 1);
+                            
+                        }}
                         disabled={step >= totalSteps}
                         className={`px-4 py-2 rounded ${
                                 step < totalSteps
